@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Nayla Hakim Ramadhani</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="isi">
+        <h1>Nayla Hakim Ramadhani</h1>
+
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="portofolio.html">Portofolio</a>
+            <a href="kontak.html" class="aktif">Kontak</a>
+        </nav>
+
+        <button class="theme-toggle">Mode Gelap</button>
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <h2>Hubungi Saya</h2>
+
+        <p>Email: nayla@gmail.com | Telepon: 085234567890</p>
+
+        <form action="#" method="post">
+
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required minlength="3">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telp">Nomor Telepon</label>
+            <input type="tel" id="telp" name="telp"
+                   pattern="[0-9]{10,13}"
+                   title="Masukkan 10-13 digit angka">
+
+            <label for="subjek">Subjek</label>
+
+            <select id="subjek" name="subjek" required>
+                <option value="">-- Pilih subjek --</option>
+                <option>Kerja sama</option>
+                <option>Pertanyaan</option>
+                <option>Lainnya</option>
+            </select>
+
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+            <label>
+                <input type="checkbox" name="setuju" required>
+                Saya menyetujui data saya digunakan untuk membalas pesan ini
+            </label>
+
+            <button type="submit" class="tombol">Kirim Pesan</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Nayla Hakim Ramadhani. Dibuat dengan HTML dan CSS.</p>
+</footer>
+</body>
+</html>
